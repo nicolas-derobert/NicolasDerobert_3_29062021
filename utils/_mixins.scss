@@ -1,0 +1,9 @@
+@mixin article-shadow($color:$color-sh-primary){
+    box-shadow: 0px 2px 1px darken($color,30%);
+} 
+@mixin article-shadow-darken($color:$color-sh-primary){
+    box-shadow: 0px 2px 1px darken($color,30%);
+}    
+@mixin header-shadow-darken($color:$color-sh-primary){
+    box-shadow: 0px 2px 1px darken($color,30%);
+}    

@@ -1,0 +1,8 @@
+header{
+display: flex;
+flex-flow: column wrap;
+@include header-shadow-darken;
+}
+.website-logo-area{
+    background-color: $color-bg-tertiary; 
+}

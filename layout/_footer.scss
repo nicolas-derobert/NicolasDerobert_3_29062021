@@ -1,0 +1,8 @@
+footer{
+    background-color: $color-bg-tertiary;
+    color:$color-tx-tertiary;
+}
+.footer-links{
+    display: flex;
+    flex-flow: column wrap;
+}

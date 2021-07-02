@@ -1,0 +1,18 @@
+main{
+    display: flex;
+    flex-flow: column wrap;
+    }
+.explore{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: $color-bg-tertiary;
+}
+.filter-area{
+    display: flex;
+    flex-flow: column wrap;
+}
+.results-area{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: $color-bg-tertiary;
+}

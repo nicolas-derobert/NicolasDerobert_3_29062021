@@ -1,0 +1,7 @@
+.button-filter{
+  @include article-shadow;
+  background-color:$color-sh-primary ;
+  &:hover {
+    @include article-shadow-darken;
+  }
+}

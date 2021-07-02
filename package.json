@@ -1,0 +1,23 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "ohmyfood version mobile first",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicolas-derobert/NicolasDerobert_3_29062021.git"
+  },
+  "keywords": [
+    "food",
+    "restaurant"
+  ],
+  "author": "Nicolas DEROBERT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nicolas-derobert/NicolasDerobert_3_29062021/issues"
+  },
+  "homepage": "https://github.com/nicolas-derobert/NicolasDerobert_3_29062021#readme"
+}
