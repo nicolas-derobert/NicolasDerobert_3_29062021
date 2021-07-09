@@ -1,8 +1,28 @@
-header{
-display: flex;
-flex-flow: column wrap;
-@include header-shadow-darken;
+header {
+  display: flex;
+  flex-flow: column wrap;
+  margin: auto;
+  text-align: center;
 }
-.website-logo-area{
-    background-color: $color-bg-tertiary; 
+.website-logo-area {
+  @include header-shadow;
+  height: 100%;
+  z-index: 1;
+  padding: 20px 0px ;
+  img{
+    color:$color-tx-tertiary;
+  }
+}
+.location-area {
+  padding: 0px 0px;
+  z-index: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-bg-secondary;
+  p {
+    padding-left: 1%;
+    font-size: 1.1rem;
+  }
 }

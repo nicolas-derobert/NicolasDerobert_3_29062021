@@ -1,8 +1,52 @@
 footer{
-    background-color: $color-bg-tertiary;
+    background-color: $color-bg-primary;
     color:$color-tx-tertiary;
+    padding: 4px 20px 12px;
+}
+.website-logo-area-bottom {
+    border-style: none;
+    i{
+      width: 100px;
+      display: block;
+    }
+    h3 {
+       font-size: 20px;
+       font-weight: 200;
+      font-family: "Shrikhand", cursive;
+    }
+  }
+  
+.proposer-logo{
+
+    grid-area: proposer-logo;
+}
+.proposer-text{
+    grid-area: proposer-text;
+}
+.partenaire-logo{
+    grid-area: partenaire-logo;
+}
+.partenaire-text{
+    grid-area: partenaire-text;
+}
+.mention{
+    grid-area: mention;
+}
+.contact{
+    grid-area: contact;
 }
 .footer-links{
-    display: flex;
-    flex-flow: column wrap;
+    display: grid;
+    grid-template-columns:1fr 12fr;
+    grid-template-rows: repeat(4, 1fr); 
+    grid-template-areas: 
+    "proposer-logo proposer-text"
+    "partenaire-logo partenaire-text "
+    "mention mention" 
+    "contact contact";
+
+    p{
+        margin: 4px 2px;
+    }
 }
+

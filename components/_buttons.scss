@@ -1,7 +1,59 @@
-.button-filter{
-  @include article-shadow;
-  background-color:$color-sh-primary ;
+.button-filter {
+  border-radius: 20px;
+  height: 75px;
+  margin: 13px 0px 13px 10px;
+  z-index: 1;
+  @include button-typography;
+  @include button-shadow-light;
+  position: relative;
   &:hover {
     @include article-shadow-darken;
+  }
+  &__number {
+    border-radius: 100%;
+    background-color: $color-primary;
+    position: absolute;
+    left: -10px;
+    top: 25px;
+    width: 30px;
+    height: 30px;
+    color: $color-tx-tertiary;
+    z-index: 2;
+    p {
+      margin: 0%;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
+.button-filter-text-area {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  height: inherit;
+  &__logo {
+    color: $color-tx-primary;
+    font-size: 20px;
+  }
+  &__text {
+    padding-left: 20px;
+        font-size: 14px;
+    font-weight: 700;
+  }
+}
+.button-explore {
+  border-radius: 20px;
+  height: 50px;
+  color: $color-tx-tertiary;
+  @include button-typography;
+  @include button-shadow-light;
+  background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+  border-width: 0px;
+  z-index: 1;
+  &:hover {
+    @include button-shadow-enhanced;
   }
 }

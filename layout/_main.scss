@@ -1,3 +1,8 @@
+body{
+    width: 100%;
+    margin: 0;
+}
+
 main{
     display: flex;
     flex-flow: column wrap;
@@ -6,13 +11,21 @@ main{
     display: flex;
     flex-flow: column wrap;
     background-color: $color-bg-tertiary;
+    padding:30px;
+    text-align: center;
+    p{
+        @include highlight-typography;
+        color: $color-sh-primary;
+    }
 }
 .filter-area{
     display: flex;
     flex-flow: column wrap;
+    margin: 20px;
 }
 .results-area{
     display: flex;
     flex-flow: column wrap;
     background-color: $color-bg-tertiary;
+    margin: 20px;
 }

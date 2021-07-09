@@ -4,17 +4,13 @@ h2,
 h3 {
   font-family: "Shrikhand", cursive;
 }
+
 h2 {
   font-size: 27px;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 12px;
 }
-
-@mixin button-typography {
-  font-size: 20px;
-}
-
-

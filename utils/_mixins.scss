@@ -1,9 +1,19 @@
-@mixin article-shadow($color:$color-sh-primary){
-    box-shadow: 0px 2px 1px darken($color,30%);
-} 
-@mixin article-shadow-darken($color:$color-sh-primary){
-    box-shadow: 0px 2px 1px darken($color,30%);
-}    
-@mixin header-shadow-darken($color:$color-sh-primary){
-    box-shadow: 0px 2px 1px darken($color,30%);
-}    
+@mixin button-shadow-light($color: $color-sh-primary) {
+  box-shadow: 0px 5px 4px 4px lighten($color: $color, $amount: 60%);
+}
+@mixin button-shadow-enhanced($color: $color-sh-primary) {
+  box-shadow: 0px 5px 4px 4px lighten($color: $color, $amount: 50%);
+}
+@mixin article-shadow($color: $color-sh-primary) {
+  box-shadow: 0px 2px 4px 4px lighten($color: $color, $amount: 70%);
+}
+@mixin article-shadow-darken($color: $color-sh-primary) {
+  box-shadow: 0px 2px 1px darken($color, 30%);
+}
+@mixin header-shadow($color: $color-sh-primary) {
+  box-shadow: 0px 1px 2px 1px lighten($color: $color, $amount: 50%);
+}
+@mixin highlight-typography {
+  font-size: 17px;
+}
+
