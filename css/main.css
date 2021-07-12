@@ -101,8 +101,8 @@ header {
 }
 
 .website-logo-area {
-  -webkit-box-shadow: 0px 1px 2px 1px #b5b5b5;
-          box-shadow: 0px 1px 2px 1px #b5b5b5;
+  -webkit-box-shadow: 0px 1px 2px 1px gray;
+          box-shadow: 0px 1px 2px 1px gray;
   height: 100%;
   z-index: 1;
   padding: 20px 0px;
@@ -166,7 +166,7 @@ main {
 
 .explore p {
   font-size: 17px;
-  color: #353535;
+  color: black;
 }
 
 .filter-area {
@@ -177,7 +177,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  margin: 20px;
+  padding: 10px 5%;
 }
 
 .results-area {
@@ -189,7 +189,7 @@ main {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   background-color: #F6F6F6;
-  margin: 20px;
+  padding: 10px 5%;
 }
 
 header {
@@ -213,21 +213,25 @@ h2, h3 {
   margin: 13px 0px 13px 10px;
   z-index: 1;
   font-size: 20px;
-  -webkit-box-shadow: 0px 5px 4px 4px #cecece;
-          box-shadow: 0px 5px 4px 4px #cecece;
+  -webkit-box-shadow: 0px 4px 3px 0px #b3b3b3;
+          box-shadow: 0px 4px 3px 0px #b3b3b3;
   position: relative;
 }
 
+.button-filter--colored {
+  background-color: white;
+}
+
 .button-filter:hover {
-  -webkit-box-shadow: 0px 2px 1px black;
-          box-shadow: 0px 2px 1px black;
+  -webkit-box-shadow: 0px 5px 4px 0px #999999;
+          box-shadow: 0px 5px 4px 0px #999999;
 }
 
 .button-filter__number {
   border-radius: 100%;
   background-color: #9356DC;
   position: absolute;
-  left: -10px;
+  left: -15px;
   top: 25px;
   width: 30px;
   height: 30px;
@@ -266,6 +270,10 @@ h2, h3 {
   font-size: 20px;
 }
 
+.button-filter-text-area__logo .button-filter--colored {
+  color: #9356DC;
+}
+
 .button-filter-text-area__text {
   padding-left: 20px;
   font-size: 14px;
@@ -273,21 +281,21 @@ h2, h3 {
 }
 
 .button-explore {
-  border-radius: 20px;
+  border-radius: 50px;
   height: 50px;
   color: #ffffff;
   font-size: 20px;
-  -webkit-box-shadow: 0px 5px 4px 4px #cecece;
-          box-shadow: 0px 5px 4px 4px #cecece;
   background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   border-width: 0px;
   z-index: 1;
+  -webkit-box-shadow: 0px 4px 3px 0px #b3b3b3;
+          box-shadow: 0px 4px 3px 0px #b3b3b3;
 }
 
 .button-explore:hover {
-  -webkit-box-shadow: 0px 5px 4px 4px #b5b5b5;
-          box-shadow: 0px 5px 4px 4px #b5b5b5;
+  -webkit-box-shadow: 0px 5px 4px 0px #999999;
+          box-shadow: 0px 5px 4px 0px #999999;
 }
 
 .restaurant-card {
@@ -298,9 +306,10 @@ h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  -webkit-box-shadow: 0px 2px 4px 4px #e8e8e8;
-          box-shadow: 0px 2px 4px 4px #e8e8e8;
+  -webkit-box-shadow: 0px 2px 4px 4px #b3b3b3;
+          box-shadow: 0px 2px 4px 4px #b3b3b3;
   border-radius: 20px;
+  margin: 20px 0px;
   position: relative;
 }
 

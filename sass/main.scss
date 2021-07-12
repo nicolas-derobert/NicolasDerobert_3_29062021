@@ -1,17 +1,17 @@
 
 @import "../utils/variables";
 @import "../utils/mixins";
+@import "../utils/functions";
 @import "../base/typography";
 @import "../layout/footer";
 @import "../layout/header";
-@import "../layout/main";
+// @import "../layout/main";
 @import "../pages/home";
 @import "../components/buttons";
 @import "../components/article";
-@import "../utils/functions";
-// @import "./utils/mixins";
+@import "./base/base";
 // @import "./utils/extensions";
-// @import "./base/base";
+
 // @import "./base/typography";
 // @import "./components/buttons";
 // @import "./layouts/header";

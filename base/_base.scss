@@ -21,11 +21,11 @@ main{
 .filter-area{
     display: flex;
     flex-flow: column wrap;
-    margin: 20px;
+    padding: 10px 5%;
 }
 .results-area{
     display: flex;
     flex-flow: column wrap;
     background-color: $color-bg-tertiary;
-    margin: 20px;
+    padding: 10px 5%;
 }

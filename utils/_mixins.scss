@@ -1,8 +1,11 @@
 @mixin button-shadow-light($color: $color-sh-primary) {
-  box-shadow: 0px 5px 4px 4px lighten($color: $color, $amount: 60%);
+  box-shadow: 0px 4px 3px 0px lighten($color: $color, $amount: 70%);
 }
 @mixin button-shadow-enhanced($color: $color-sh-primary) {
-  box-shadow: 0px 5px 4px 4px lighten($color: $color, $amount: 50%);
+  box-shadow: 0px 5px 4px 0px lighten($color: $color, $amount: 60%);
+}
+@mixin button-bg-light($color: $color-primary) {
+  background-color: lighten($color: $color, $amount: 60%);
 }
 @mixin article-shadow($color: $color-sh-primary) {
   box-shadow: 0px 2px 4px 4px lighten($color: $color, $amount: 70%);

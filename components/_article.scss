@@ -3,6 +3,7 @@
   flex-flow: column wrap;
   @include article-shadow;
   border-radius: 20px;
+margin: 20px 0px;
   position: relative;
   &__image-area {
     height: 175px;
