@@ -99,41 +99,6 @@ header {
   font-size: 1.1rem;
 }
 
-body {
-  width: 100%;
-  margin: 0;
-}
-
-main {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-.explore {
-  display: flex;
-  flex-flow: column wrap;
-  background-color: #F6F6F6;
-  padding: 30px;
-  text-align: center;
-}
-.explore p {
-  font-size: 17px;
-  color: black;
-}
-
-.filter-area {
-  display: flex;
-  flex-flow: column wrap;
-  padding: 10px 5%;
-}
-
-.results-area {
-  display: flex;
-  flex-flow: column wrap;
-  background-color: #F6F6F6;
-  padding: 10px 5%;
-}
-
 header {
   display: flex;
   flex-flow: column wrap;
@@ -268,4 +233,39 @@ h2, h3 {
   flex: 1 20%;
   text-align: center;
   width: 100%;
+}
+
+body {
+  width: 100%;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.explore {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #F6F6F6;
+  padding: 30px;
+  text-align: center;
+}
+.explore p {
+  font-size: 17px;
+  color: black;
+}
+
+.filter-area {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px 5%;
+}
+
+.results-area {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #F6F6F6;
+  padding: 10px 5%;
 }

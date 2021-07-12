@@ -4,10 +4,14 @@
   margin: 13px 0px 13px 10px;
   z-index: 1;
   font-size: 20px;
-  @include button-shadow-light;
+  @include button-shadow-light($color: $color-sh-primary);
   position: relative;
+  background-color: $color-bg-tertiary;
   &--colored {
     @include button-bg-light;
+    .button-filter-text-area__logo{
+    color: $color-primary;
+  }
   }
   &:hover {
     @include button-shadow-enhanced;
@@ -31,6 +35,8 @@
     }
   }
 }
+
+
 .button-filter-text-area {
   display: flex;
   flex-flow: row nowrap;
@@ -40,9 +46,6 @@
   &__logo {
     color: $color-tx-primary;
     font-size: 20px;
-    .button-filter--colored {
-      color: $color-primary;
-    }
   }
   &__text {
     padding-left: 20px;
