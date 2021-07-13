@@ -53,21 +53,30 @@
     text-align: center;
     width: 100%;
     font-size: 1.5em;
-    transition: all 10000ms;
     .non-hover {
       display: block;
     }
     .hover-only {
+      color: burlywood;
+      transition: all 3s;
+      // display: none;
+    }
+    &:hover>.hover-only {
+      // color: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+      color: $color-secondary;
+      transform: scale(1.95);
+      display: block;
+    }
+    &:hover>.non-hover {
       display: none;
     }
-    &:hover {
-      .non-hover {
-        display: none;
-      }
-      .hover-only {
-        color: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
-        display: block;
-      }
-    }
+  }
+}
+.dish{
+&__price{
+
+}
+&__text{
+
   }
 }

@@ -241,20 +241,21 @@ header {
   text-align: center;
   width: 100%;
   font-size: 1.5em;
-  transition: all 10000ms;
 }
 .text-area__logo .non-hover {
   display: block;
 }
 .text-area__logo .hover-only {
-  display: none;
+  color: burlywood;
+  transition: all 3s;
 }
-.text-area__logo:hover .non-hover {
-  display: none;
-}
-.text-area__logo:hover .hover-only {
-  color: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+.text-area__logo:hover > .hover-only {
+  color: #FF79DA;
+  transform: scale(1.95);
   display: block;
+}
+.text-area__logo:hover > .non-hover {
+  display: none;
 }
 
 body {
