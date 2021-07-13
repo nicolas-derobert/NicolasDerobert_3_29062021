@@ -2,6 +2,10 @@ body{
     width: 100%;
     margin: 0;
 }
+header{
+    display: flex;
+    flex-flow: column wrap;
+}
 
 main{
     display: flex;

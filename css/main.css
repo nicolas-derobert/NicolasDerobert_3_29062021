@@ -5,6 +5,11 @@ h3 {
   font-family: "Shrikhand", cursive;
 }
 
+h2 .hom, h3 .home {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
 h2 {
   font-size: 27px;
 }
@@ -79,10 +84,20 @@ header {
   box-shadow: 0px 1px 2px 1px gray;
   height: 100%;
   z-index: 1;
-  padding: 20px 0px;
+  padding: 20px 5%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  font-size: 1.5em;
 }
 .website-logo-area img {
   color: #ffffff;
+  flex-basis: 80%;
+}
+.website-logo-area i {
+  flex: 1 20%;
+  text-align: center;
+  width: 100%;
 }
 
 .location-area {
@@ -97,16 +112,6 @@ header {
 .location-area p {
   padding-left: 1%;
   font-size: 1.1rem;
-}
-
-header {
-  display: flex;
-  flex-flow: column wrap;
-}
-
-h2, h3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: bold;
 }
 
 .button-filter {
@@ -235,11 +240,31 @@ h2, h3 {
   flex: 1 20%;
   text-align: center;
   width: 100%;
+  font-size: 1.5em;
+  transition: all 10000ms;
+}
+.text-area__logo .non-hover {
+  display: block;
+}
+.text-area__logo .hover-only {
+  display: none;
+}
+.text-area__logo:hover .non-hover {
+  display: none;
+}
+.text-area__logo:hover .hover-only {
+  color: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  display: block;
 }
 
 body {
   width: 100%;
   margin: 0;
+}
+
+header {
+  display: flex;
+  flex-flow: column wrap;
 }
 
 main {

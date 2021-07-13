@@ -3,7 +3,7 @@
   flex-flow: column wrap;
   @include article-shadow;
   border-radius: 20px;
-margin: 20px 0px;
+  margin: 20px 0px;
   position: relative;
   &__image-area {
     height: 175px;
@@ -13,14 +13,13 @@ margin: 20px 0px;
     top: 13px;
     right: 12px;
     height: 30px;
-    padding:0% 3% ;
+    padding: 0% 3%;
     background-color: $color-tertiary;
     color: $color-tx-secondary;
     display: flex;
-    p{
+    p {
       margin: auto;
       font-weight: 700;
-
     }
   }
   img {
@@ -53,5 +52,22 @@ margin: 20px 0px;
     flex: 1 20%;
     text-align: center;
     width: 100%;
+    font-size: 1.5em;
+    transition: all 10000ms;
+    .non-hover {
+      display: block;
+    }
+    .hover-only {
+      display: none;
+    }
+    &:hover {
+      .non-hover {
+        display: none;
+      }
+      .hover-only {
+        color: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
+        display: block;
+      }
+    }
   }
 }
