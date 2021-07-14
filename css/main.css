@@ -241,23 +241,18 @@ header {
   text-align: center;
   width: 100%;
   font-size: 1.5em;
+  color: darkblue;
+  transition: all 1s linear 0s;
 }
-.text-area__logo .non-hover {
-  display: block;
+.text-area__logo .fa-heart::before {
+  content: "";
+  font-weight: bold;
+  transition: color 1s ease-out;
 }
-.text-area__logo .hover-only {
-  color: burlywood;
-  transition: all 3s;
+.text-area__logo .fa-heart:hover::before {
+  color: red;
+  cursor: pointer;
 }
-.text-area__logo:hover > .hover-only {
-  color: #FF79DA;
-  transform: scale(1.95);
-  display: block;
-}
-.text-area__logo:hover > .non-hover {
-  display: none;
-}
-
 body {
   width: 100%;
   margin: 0;

@@ -53,30 +53,34 @@
     text-align: center;
     width: 100%;
     font-size: 1.5em;
-    .non-hover {
-      display: block;
+    color: darkblue;
+    transition: all 1s linear 0s;
+    .fa-heart {
+      // color: #FFF;
+      // background-color: #000;
+      // border-radius: 50%;
+      // padding:.2em;
     }
-    .hover-only {
-      color: burlywood;
-      transition: all 3s;
-      // display: none;
+    .fa-heart::before {
+      content: "";
+      font-weight: bold;
+      transition: color 1s ease-out;
     }
-    &:hover>.hover-only {
-      // color: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
-      color: $color-secondary;
-      transform: scale(1.95);
-      display: block;
+    .fa-heart:hover::before{
+      color: red;
+      cursor: pointer;
     }
-    &:hover>.non-hover {
-      display: none;
+    // font-size: 10%;
+    &:hover {
+      // font-size: 100%;
+      // color: $color-secondary;
     }
   }
 }
-.dish{
-&__price{
-
-}
-&__text{
-
+.dish {
+  &__price {
+  }
+  &__text {
   }
 }
+
