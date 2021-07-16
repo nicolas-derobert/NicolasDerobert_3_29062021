@@ -1,3 +1,6 @@
+@mixin button-shadow-very-light($color: $color-sh-primary) {
+  box-shadow: 0px 0px 6px 4px lighten($color: $color, $amount: 90%);
+}
 @mixin button-shadow-light($color: $color-sh-primary) {
   box-shadow: 0px 4px 3px 0px lighten($color: $color, $amount: 70%);
 }

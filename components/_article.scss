@@ -52,35 +52,157 @@
     flex: 1 20%;
     text-align: center;
     width: 100%;
-    font-size: 1.5em;
-    color: darkblue;
-    transition: all 1s linear 0s;
-    .fa-heart {
-      // color: #FFF;
-      // background-color: #000;
-      // border-radius: 50%;
-      // padding:.2em;
-    }
-    .fa-heart::before {
-      content: "";
-      font-weight: bold;
-      transition: color 1s ease-out;
-    }
-    .fa-heart:hover::before{
-      color: red;
-      cursor: pointer;
-    }
-    // font-size: 10%;
-    &:hover {
-      // font-size: 100%;
-      // color: $color-secondary;
-    }
-  }
-}
-.dish {
-  &__price {
-  }
-  &__text {
+    font-size: 2em;
+    position: relative;
   }
 }
 
+.votation {
+  height: 100px;
+}
+.votation .filled-heart {
+  font-size: 2em;
+  top: 35px;
+  right: 55px;
+  position: absolute;
+  font-style: normal;
+}
+.home .filled-heart {
+  top: -10px;
+  right: 30%;
+  position: absolute;
+  font-style: normal;
+}
+.filled-heart {
+  z-index: 3;
+  font-family: fontawesome;
+  background: -webkit-linear-gradient(
+    -90deg,
+    $color-primary 0%,
+    $color-secondary 100%
+  );
+  transform: scale(0%);
+  transition: transform 0.2s;
+  transform-origin: 50% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.votation .empty-heart {
+  font-size: 2em;
+  top: 35px;
+  right: 55px;
+  position: absolute;
+}
+.home .empty-heart {
+  top: -10px;
+  right: 30%;
+  position: absolute;
+}
+.empty-heart {
+  z-index: 2;
+  transition: color 0.2s cubic-bezier(1, 0.01, 0.9, 1);
+  &:hover + .filled-heart {
+    transform: scale(100%);
+  }
+  &:hover {
+    color: white;
+  }
+}
+$num-dishes: 3;
+$anim-dur: 1s;
+$anim-delay: $anim-dur / $num-dishes;
+.dish {
+  height: 60px;
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $color-bg-fifthly;
+  overflow: hidden;
+  @include button-shadow-very-light;
+  animation: appear-dishes $anim-dur ease both;
+  &:hover .dish__selection {
+    flex-basis: 20%;
+  }
+  &:hover .tick {
+    animation: rotate-tick 1s 1;
+  }
+  &__text {
+    flex-basis: 70%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    .dish-title {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      margin: 15px 5px 2px 5px;
+    }
+    .dish-description {
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 1;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin: 2px 5px 15px 5px;
+    }
+  }
+  &__price {
+    flex-basis: 10%;
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-right: 20px;
+  }
+  &__selection {
+    background-color: $color-tertiary;
+    flex-basis: 0%;
+    height: 60px;
+    border-radius: 0px 20px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transition: all 0.3s;
+    .tick {
+      font-size: 2em;
+      color: $color-tx-tertiary;
+      overflow: hidden;
+    }
+  }
+}
+
+.dish {
+  &__elem {
+    @for $i from 1 through $num-dishes {
+      &#{$i} {
+        animation-delay: $anim-delay * $i;
+      }
+    }
+  }
+}
+@keyframes rotate-tick {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes appear-dishes {
+  0% {
+    transform: translate(0, 50px);
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0, 0px);
+    opacity: 1;
+  }
+}

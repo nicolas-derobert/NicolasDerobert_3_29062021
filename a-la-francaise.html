@@ -1,33 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/aa1f9ebfe3.js"
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="/css/main.css" />
-    <title>A la française</title>
+    />
+    <title>Ohmyfood Home</title>
   </head>
   <body>
     <header>
       <div class="website-logo-area">
-        <i class="fas fa-arrow-left"></i>
+        <a href="#"><i class="fas fa-arrow-left"></i></a>
         <img src="images/logo/ohmyfood@2x.svg" alt="Logo site Ohmyfood" />
       </div>
-      <img src="images/restaurants/a-la-francaise.jpg" alt="" />
-      <h1>A la française</h1>
+      <div class="main-picture">
+        <img src="images/restaurants/a-la-francaise.jpg" alt="" />
+      </div>
     </header>
     <main>
-      <h2>Entrées</h2>
-      
-      <article class="dish">
-        <h3 class="dish__title">Tartare de poulpe acidulé</h3>
-        <p class="dish__text">Aux zestes d'orange</p>
-        <div class="dish__price">25€</div>
-      </article>
+      <section class="menu">
+        <div class="title-area">
+          <div class="votation">
+            <h1>A la française</h1>
+            <i class="far fa-heart empty-heart"></i>
+            <i class="fas fa-heart filled-heart"></i>
+          </div>
+        </div>
+        <h2>Entrées</h2>
+        <div class="division-bloc">
+          <div class="underlined"></div>
+          <div class="not-underlined"></div>
+        </div>
+        <section class="all-dishes">
+          <article class="dish dish__elem1">
+            <div class="dish__text">
+              <h3 class="dish-title">Tartare de poulpe acidulé</h3>
+              <p class="dish-description">Aux zestes d'orange</p>
+            </div>
+            <div class="dish__price">25€</div>
+            <div class="dish__selection">
+              <i class="fas fa-check-circle tick"></i>
+            </div>
+          </article>
+          <article class="dish dish__elem2">
+            <div class="dish__text">
+              <h3 class="dish-title">Tartare de poulpe acidulé</h3>
+              <p class="dish-description">Aux zestes d'orange</p>
+            </div>
+            <div class="dish__price">25€</div>
+            <div class="dish__selection">
+              <i class="fas fa-check-circle tick"></i>
+            </div>
+          </article>
+          <article class="dish dish__elem3">
+            <div class="dish__text">
+              <h3 class="dish-title">Tartare de poulpe acidulé</h3>
+              <p class="dish-description">Aux zestes d'orange</p>
+            </div>
+            <div class="dish__price">25€</div>
+            <div class="dish__selection">
+              <i class="fas fa-check-circle tick"></i>
+            </div>
+          </article>
+        </section>
+      </section>
     </main>
     <footer>
       <section>

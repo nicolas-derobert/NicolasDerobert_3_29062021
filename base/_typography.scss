@@ -4,13 +4,29 @@ h2,
 h3 {
   font-family: "Shrikhand", cursive;
 }
-h2 .hom,h3 .home{
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-weight: 300;
+  margin-bottom: 0px;
+}
+
+h3 {
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-size: 2em;
+}
+.home h1{
+  display: none;
+}
+.home h2 ,.home h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-}
-h2 {
   font-size: 27px;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;

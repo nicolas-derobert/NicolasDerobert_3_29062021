@@ -4,18 +4,22 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://kit.fontawesome.com/aa1f9ebfe3.js"
-      crossorigin="anonymous"
-    ></script>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+    />
     <title>Ohmyfood Home</title>
   </head>
-  <body>
+  <body class="home">
+    <div class="loader"></div>
     <header>
       <div class="website-logo-area">
         <img src="images/logo/ohmyfood@2x.svg" alt="Logo site Ohmyfood" />
       </div>
+      <h1>Oh my food</h1>
       <div class="location-area">
         <i class="fas fa-map-marker-alt"></i>
         <p class="location-area__text-area">Paris, Belleville</p>
@@ -43,7 +47,7 @@
           </div>
         </div>
         <div class="button-filter">
-          <div class="button-filter__number"><p>1</p></div>
+          <div class="button-filter__number"><p>2</p></div>
           <div class="button-filter-text-area">
             <div class="button-filter-text-area__logo">
               <i class="fas fa-list-ul"></i>
@@ -52,7 +56,7 @@
           </div>
         </div>
         <div class="button-filter button-filter--colored">
-          <div class="button-filter__number"><p>1</p></div>
+          <div class="button-filter__number"><p>3</p></div>
           <div class="button-filter-text-area">
             <div class="button-filter-text-area__logo">
               <i class="fas fa-store"></i>
@@ -63,11 +67,12 @@
           </div>
         </div>
       </section>
+
       <section class="results-area">
         <h2 class="home">Restaurant</h2>
         <section class="restaurants-list">
           <article class="restaurant-card">
-              <div class="restaurant-card__img-area">
+            <div class="restaurant-card__img-area">
               <div class="restaurant-card__flag"><p>Nouveau</p></div>
               <img
                 src="images/restaurants/la-palette.jpg"
@@ -80,9 +85,8 @@
                 <p class="">Ménilmontant</p>
               </div>
               <div class="text-area__logo">
-                <!-- <div>Mon texte</div> -->
-                <!-- <i class="far fa-heart non-hover"></i> -->
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart empty-heart"></i>
+                <i class="fas fa-heart filled-heart"></i>
               </div>
             </div>
           </article>
@@ -99,7 +103,10 @@
                 <h3 class="home">La note enchantée</h3>
                 <p class="">Charone</p>
               </div>
-              <div class="text-area__logo"><i class="far fa-heart"></i></div>
+              <div class="text-area__logo">
+                <i class="far fa-heart empty-heart"></i>
+                <i class="fas fa-heart filled-heart"></i>
+              </div>
             </div>
           </article>
           <article class="restaurant-card">
@@ -115,7 +122,10 @@
                 <h3 class="home">&agrave; la française</h3>
                 <p class="">Cité rouge</p>
               </div>
-              <div class="text-area__logo"><i class="far fa-heart"></i></div>
+              <div class="text-area__logo">
+                <i class="far fa-heart empty-heart"></i>
+                <i class="fas fa-heart filled-heart"></i>
+              </div>
             </div>
           </article>
         </section>

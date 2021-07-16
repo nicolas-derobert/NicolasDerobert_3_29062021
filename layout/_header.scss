@@ -4,20 +4,27 @@ header {
   margin: auto;
   text-align: center;
 }
+.main-picture {
+  img {
+    object-fit: cover;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+  }
+}
 .website-logo-area {
   @include header-shadow;
   height: 100%;
   z-index: 1;
-  padding: 20px 5% ;
+  padding: 20px 5%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   font-size: 1.5em;
-  img{
-    color:$color-tx-tertiary;
+  img {
+    color: $color-tx-tertiary;
     flex-basis: 80%;
   }
-  i{
+  i {
     flex: 1 20%;
     text-align: center;
     width: 100%;

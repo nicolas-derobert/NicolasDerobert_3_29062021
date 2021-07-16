@@ -1,35 +1,56 @@
-body{
-    width: 100%;
-    margin: 0;
+body {
+  width: 100%;
+  margin: 0px;
 }
-header{
-    display: flex;
-    flex-flow: column wrap;
+header {
+  display: flex;
+  flex-flow: column wrap;
 }
 
-main{
-    display: flex;
-    flex-flow: column wrap;
-    }
-.explore{
-    display: flex;
-    flex-flow: column wrap;
-    background-color: $color-bg-tertiary;
-    padding:30px;
-    text-align: center;
-    p{
-        @include highlight-typography;
-        color: $color-sh-primary;
-    }
+main {
+  display: flex;
+  flex-flow: column wrap;
 }
-.filter-area{
-    display: flex;
-    flex-flow: column wrap;
-    padding: 10px 5%;
+.explore {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: $color-bg-tertiary;
+  padding: 30px;
+  text-align: center;
+  p {
+    @include highlight-typography;
+    color: $color-sh-primary;
+  }
 }
-.results-area{
-    display: flex;
-    flex-flow: column wrap;
-    background-color: $color-bg-tertiary;
-    padding: 10px 5%;
+.menu {
+  padding: 10px 5%;
+  transform: translate(0, -30px);
+  background-color: $color-bg-tertiary;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.filter-area {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10px 5%;
+}
+.results-area {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: $color-bg-tertiary;
+  padding: 10px 5%;
+}
+.division-bloc {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 20px;
+  .underlined {
+    flex-basis: 10%;
+    border-top: solid;
+    border-color: $color-tertiary;
+    border-width: 2px;
+  }
+  .not-underlined {
+    flex-basis: 90%;
+  }
 }

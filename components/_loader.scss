@@ -1,0 +1,61 @@
+.home header,
+.home main,
+.home footer {
+  animation: disappear 2s 1s 1 ease;
+}
+
+.loader {
+  display: block;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: 30vh;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  animation:  loader-anim 1s linear 2.99s infinite;
+}
+.loader:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid $color-primary;
+  border-color: $color-primary transparent $color-primary transparent;
+  animation: loader-before-anim 1s linear 1s 5, loader-anim 1s linear 3s infinite;
+}
+@keyframes disappear {
+  0% {
+    transform: translate(-9999px);
+  }
+  90% {
+    transform: translate(-9999px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+@keyframes loader-before-anim {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader-anim {
+  0% {
+    border-color: $color-secondary transparent $color-secondary transparent;
+    opacity: 0;
+}
+  90% {
+    border-color: $color-secondary transparent $color-secondary transparent;
+    opacity: 0;
+}
+  100% {
+    border-color: $color-secondary transparent $color-secondary transparent;
+    opacity: 0;
+  }
+}
