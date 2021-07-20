@@ -15,6 +15,12 @@ main {
   display: flex;
   flex-flow: column wrap;
 }
+.presentation{
+  padding: 20px;
+  line-height: 150%;
+@include button-bg-light($color: $color-secondary);
+
+}
 .explore {
   display: flex;
   flex-flow: column wrap;

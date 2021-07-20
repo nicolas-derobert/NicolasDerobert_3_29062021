@@ -288,7 +288,7 @@ footer {
 }
 
 .button-filter--colored {
-  background-color: #e4d5f6;
+  background-color: #ceb3ef;
 }
 
 .button-filter--colored .button-filter-text-area__logo {
@@ -870,6 +870,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+}
+
+.presentation {
+  padding: 20px;
+  line-height: 150%;
+  background-color: #ffe9f9;
 }
 
 .explore {
