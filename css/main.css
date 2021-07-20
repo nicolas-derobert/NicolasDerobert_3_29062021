@@ -140,10 +140,16 @@ footer {
   border-radius: 20px 20px 0px 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .main-picture img {
+    max-height: 250px;
+  }
+}
+
 .website-logo-area {
   height: 100%;
   z-index: 1;
-  padding: 20px 5%;
+  padding: 20px 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -380,16 +386,24 @@ footer {
   border-radius: 20px;
   margin: 20px 0px;
   position: relative;
+  height: 250px;
+}
+
+.restaurant-card a {
+  text-decoration: none;
+  color: black;
 }
 
 @media screen and (min-width: 768px) {
   .restaurant-card {
     margin: 20px;
+    width: 20%;
   }
 }
 
-.restaurant-card__image-area {
+.restaurant-card__img-area {
   height: 175px;
+  overflow: hidden;
 }
 
 .restaurant-card__flag {
@@ -417,6 +431,12 @@ footer {
   border-radius: 20px 20px 0px 0px;
 }
 
+@media screen and (min-width: 768px) {
+  .restaurant-card img {
+    height: 100%;
+  }
+}
+
 .text-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -431,6 +451,7 @@ footer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 75px;
 }
 
 .text-area__text {

@@ -1,20 +1,20 @@
-header {
-  // display: flex;
-  // flex-flow: column wrap;
-  // margin: auto;
-  // text-align: center;
-}
+// header {
+
+// }
 .main-picture {
   img {
     object-fit: cover;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
+    @include tablet-and-more-generic {
+      max-height: 250px;
+          }
   }
 }
 .website-logo-area {
   height: 100%;
   z-index: 1;
-  padding: 20px 5%;
+  padding: 20px 0%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;

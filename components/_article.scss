@@ -5,11 +5,18 @@
   border-radius: 20px;
   margin: 20px 0px;
   position: relative;
+  height: 250px;
+  a{
+    text-decoration: none;
+    color: $color-tx-fourthly;
+  }
   @include tablet-and-more-generic {
     margin: 20px;
+    width: 20%;
   }
-  &__image-area {
-    height: 175px;
+  &__img-area {
+    height: 175px;;
+    overflow: hidden;
   }
   &__flag {
     position: absolute;
@@ -28,6 +35,9 @@
   img {
     object-fit: cover;
     width: 100%;
+    @include tablet-and-more-generic {
+height: 100%;
+    }
     border-radius: 20px 20px 0px 0px;
   }
 }
@@ -36,6 +46,7 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
+  height: 75px;
   &__text {
     flex: 2 70%;
     padding-left: 4%;
