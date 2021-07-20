@@ -42,6 +42,21 @@ footer {
   padding: 4px 20px 12px;
 }
 
+@media screen and (min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .website-logo-area-bottom {
   border-style: none;
 }
@@ -103,21 +118,18 @@ footer {
   -ms-grid-rows: (1fr)[4];
       grid-template-rows: repeat(4, 1fr);
       grid-template-areas: "proposer-logo proposer-text" "partenaire-logo partenaire-text " "mention mention"  "contact contact";
+  margin-bottom: 20px;
 }
 
 .footer-links p {
   margin: 4px 2px;
 }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  margin: auto;
+.footer-links i {
+  padding-left: 5px;
+  padding-right: 5px;
+  line-height: 20px;
+  font-size: 100%;
   text-align: center;
 }
 
@@ -129,8 +141,6 @@ header {
 }
 
 .website-logo-area {
-  -webkit-box-shadow: 0px 1px 2px 1px gray;
-          box-shadow: 0px 1px 2px 1px gray;
   height: 100%;
   z-index: 1;
   padding: 20px 5%;
@@ -149,16 +159,51 @@ header {
 
 .website-logo-area img {
   color: #ffffff;
-  -ms-flex-preferred-size: 80%;
-      flex-basis: 80%;
 }
 
-.website-logo-area i {
+.allpages .website-logo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.allpages .website-logo-area img {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.allpages .website-logo-area div {
   -webkit-box-flex: 1;
       -ms-flex: 1 20%;
           flex: 1 20%;
   text-align: center;
   width: 100%;
+}
+
+.allpages .website-logo-area div i {
+  color: black;
+}
+
+.home .website-logo-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-shadow: 0px 1px 2px 1px gray;
+          box-shadow: 0px 1px 2px 1px gray;
 }
 
 .location-area {
@@ -185,6 +230,38 @@ header {
   font-size: 1.1rem;
 }
 
+.button-explore {
+  border-radius: 50px;
+  color: #ffffff;
+  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
+  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  border-width: 0px;
+  z-index: 1;
+  -webkit-box-shadow: 0px 4px 3px 0px #b3b3b3;
+          box-shadow: 0px 4px 3px 0px #b3b3b3;
+}
+
+@media screen and (min-width: 768px) {
+  .button-explore {
+    margin: 30px;
+    padding: 0px 30px;
+  }
+}
+
+.button-explore:hover {
+  -webkit-box-shadow: 0px 5px 4px 0px #999999;
+          box-shadow: 0px 5px 4px 0px #999999;
+}
+
+.home .button-explore {
+  height: 50px;
+  font-size: 20px;
+}
+
+.allpages .button-explore {
+  padding: 10px 20px;
+}
+
 .button-filter {
   border-radius: 20px;
   height: 75px;
@@ -195,6 +272,13 @@ header {
           box-shadow: 0px 4px 3px 0px #b3b3b3;
   position: relative;
   background-color: #F6F6F6;
+}
+
+@media screen and (min-width: 768px) {
+  .button-filter {
+    margin: 30px;
+    padding: 0px 30px;
+  }
 }
 
 .button-filter--colored {
@@ -231,6 +315,30 @@ header {
           transform: translate(-50%, -50%);
 }
 
+.button-filter-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .button-filter-area {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .button-filter-text-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -259,24 +367,6 @@ header {
   font-weight: 700;
 }
 
-.button-explore {
-  border-radius: 50px;
-  height: 50px;
-  color: #ffffff;
-  font-size: 20px;
-  background: -webkit-gradient(linear, left bottom, left top, from(#9356DC), to(#FF79DA));
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
-  border-width: 0px;
-  z-index: 1;
-  -webkit-box-shadow: 0px 4px 3px 0px #b3b3b3;
-          box-shadow: 0px 4px 3px 0px #b3b3b3;
-}
-
-.button-explore:hover {
-  -webkit-box-shadow: 0px 5px 4px 0px #999999;
-          box-shadow: 0px 5px 4px 0px #999999;
-}
-
 .restaurant-card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,6 +380,12 @@ header {
   border-radius: 20px;
   margin: 20px 0px;
   position: relative;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurant-card {
+    margin: 20px;
+  }
 }
 
 .restaurant-card__image-area {
@@ -728,6 +824,13 @@ body {
   margin: 0px;
 }
 
+@media screen and (min-width: 1200px) {
+  body {
+    width: 75%;
+    margin: auto;
+  }
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,9 +864,39 @@ main {
   text-align: center;
 }
 
+@media screen and (min-width: 768px) {
+  .explore {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
 .explore p {
   font-size: 17px;
   color: black;
+}
+
+.order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .menu {
@@ -786,15 +919,32 @@ main {
 }
 
 .results-area {
+  background-color: #F6F6F6;
+  padding: 10px 5%;
+}
+
+.restaurants-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
-  background-color: #F6F6F6;
-  padding: 10px 5%;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 
 .division-bloc {
@@ -819,5 +969,26 @@ main {
 .division-bloc .not-underlined {
   -ms-flex-preferred-size: 90%;
       flex-basis: 90%;
+}
+
+.all-dishes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  .all-dishes {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
 }
 /*# sourceMappingURL=main.css.map */

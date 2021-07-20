@@ -1,8 +1,8 @@
 header {
-  display: flex;
-  flex-flow: column wrap;
-  margin: auto;
-  text-align: center;
+  // display: flex;
+  // flex-flow: column wrap;
+  // margin: auto;
+  // text-align: center;
 }
 .main-picture {
   img {
@@ -12,7 +12,6 @@ header {
   }
 }
 .website-logo-area {
-  @include header-shadow;
   height: 100%;
   z-index: 1;
   padding: 20px 5%;
@@ -22,14 +21,32 @@ header {
   font-size: 1.5em;
   img {
     color: $color-tx-tertiary;
-    flex-basis: 80%;
   }
-  i {
+}
+.allpages .website-logo-area {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  img {
+    flex-basis: 60%;
+  }
+  div {
+    i {
+      color: $color-tx-fourthly;
+    }
     flex: 1 20%;
     text-align: center;
     width: 100%;
   }
 }
+.home .website-logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @include header-shadow;
+}
+
 .location-area {
   padding: 0px 0px;
   z-index: 0;

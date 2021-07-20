@@ -22,3 +22,23 @@
 @mixin highlight-typography {
   font-size: 17px;
 }
+
+// Media Querries
+@mixin tablet-and-more-row-positionning {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+}
+
+@mixin tablet-and-more-generic {
+  @media screen and (min-width: $breakpoint-tablet) {
+    @content;
+  }
+}
+@mixin large-devices-and-more-generic {
+  @media screen and (min-width: $breakpoint-large) {
+    @content;
+  }
+}

@@ -10,6 +10,16 @@ $color-bg-fifthly:#ffffff; //blanc
 $color-tx-primary : #7E7E7E;
 $color-tx-secondary : #008766;
 $color-tx-tertiary :#ffffff;
+$color-tx-fourthly :rgb(0, 0, 0); 
 $color-sh-primary :rgb(0, 0, 0);
 $color-sh-dark :rgb(0, 0, 0);
 
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 992px;
+$breakpoint-large:1200px;
+$breakpoint-larger:1400px;
+// Small devices (landscape phones, 576px and up)
+// Medium devices (tablets, 768px and up)
+// Large devices (desktops, 992px and up)
+// X-Large devices (large desktops, 1200px and up)
+// XX-Large devices (larger desktops, 1400px and up)

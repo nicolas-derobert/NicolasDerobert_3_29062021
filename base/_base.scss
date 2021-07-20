@@ -1,6 +1,10 @@
 body {
   width: 100%;
   margin: 0px;
+  @include large-devices-and-more-generic {
+    width: 75%;
+    margin: auto;
+    }
 }
 header {
   display: flex;
@@ -17,10 +21,17 @@ main {
   background-color: $color-bg-tertiary;
   padding: 30px;
   text-align: center;
+  @include tablet-and-more-row-positionning ;
   p {
     @include highlight-typography;
     color: $color-sh-primary;
   }
+}
+.order{
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
 }
 .menu {
   padding: 10px 5%;
@@ -35,10 +46,13 @@ main {
   padding: 10px 5%;
 }
 .results-area {
-  display: flex;
-  flex-flow: column wrap;
   background-color: $color-bg-tertiary;
   padding: 10px 5%;
+}
+.restaurants-list{
+  display: flex;
+  flex-flow: column nowrap;
+  @include tablet-and-more-row-positionning ;
 }
 .division-bloc {
   display: flex;
@@ -53,4 +67,13 @@ main {
   .not-underlined {
     flex-basis: 90%;
   }
+}
+
+.all-dishes{
+  display: flex;
+  flex-flow: column nowrap;
+  @include tablet-and-more-generic {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    }
 }

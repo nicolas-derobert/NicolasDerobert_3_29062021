@@ -5,6 +5,9 @@
   border-radius: 20px;
   margin: 20px 0px;
   position: relative;
+  @include tablet-and-more-generic {
+    margin: 20px;
+  }
   &__image-area {
     height: 175px;
   }
