@@ -125,6 +125,11 @@ footer {
   margin: 4px 2px;
 }
 
+.footer-links p a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
 .footer-links i {
   padding-left: 5px;
   padding-right: 5px;
@@ -569,9 +574,9 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   background-color: #ffffff;
   overflow: hidden;
   -webkit-box-shadow: 0px 0px 6px 4px #e6e6e6;
@@ -591,8 +596,9 @@ footer {
 }
 
 .dish__text {
-  -ms-flex-preferred-size: 70%;
-      flex-basis: 70%;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding-left: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -623,11 +629,12 @@ footer {
 }
 
 .dish__price {
-  -ms-flex-preferred-size: 10%;
-      flex-basis: 10%;
+  -ms-flex-preferred-size: 5%;
+      flex-basis: 5%;
   font-size: 1.2em;
   font-weight: 600;
   margin-right: 20px;
+  margin-bottom: 2%;
 }
 
 .dish__selection {
@@ -872,12 +879,6 @@ main {
           flex-flow: column wrap;
 }
 
-.presentation {
-  padding: 20px;
-  line-height: 150%;
-  background-color: #ffe9f9;
-}
-
 .explore {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1016,6 +1017,10 @@ main {
             flex-flow: row nowrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+  }
+  .all-dishes section {
+    -ms-flex-preferred-size: 30%;
+        flex-basis: 30%;
   }
 }
 /*# sourceMappingURL=main.css.map */

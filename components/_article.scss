@@ -134,7 +134,7 @@ $anim-delay: $anim-dur / $num-dishes;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items:  flex-end;
   background-color: $color-bg-fifthly;
   overflow: hidden;
   @include button-shadow-very-light;
@@ -146,7 +146,8 @@ $anim-delay: $anim-dur / $num-dishes;
     animation: rotate-tick 1s 1;
   }
   &__text {
-    flex-basis: 70%;
+    flex-basis: 100%;
+    padding-left: 4%;
     display: flex;
     flex-flow: column nowrap;
     justify-content: start;
@@ -167,10 +168,11 @@ $anim-delay: $anim-dur / $num-dishes;
     }
   }
   &__price {
-    flex-basis: 10%;
+    flex-basis: 5%;
     font-size: 1.2em;
     font-weight: 600;
     margin-right: 20px;
+    margin-bottom: 2%;
   }
   &__selection {
     background-color: $color-tertiary;
