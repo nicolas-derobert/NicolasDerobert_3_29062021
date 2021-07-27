@@ -1,6 +1,6 @@
 footer{
-    background-color: $color-bg-primary;
-    color:$color-tx-tertiary;
+    background-color: $color-fourthly;
+    color:$color-seventhly;
     padding: 4px 20px 12px;
     @include tablet-and-more-generic {
 display: flex;
@@ -56,7 +56,7 @@ align-items: center;
     p{
         margin: 4px 2px;
         a{
-            color: $color-tx-tertiary ;
+            color: $color-seventhly ;
             text-decoration: none;
         }
     }

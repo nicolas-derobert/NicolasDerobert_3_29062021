@@ -2,17 +2,14 @@
 $color-primary : #9356DC;
 $color-secondary : #FF79DA;
 $color-tertiary : #15DEA5;
-$color-bg-primary :#353535;
-$color-bg-secondary :#EAEAEA;
-$color-bg-tertiary : #F6F6F6; // bouton et restaurant
-$color-bg-fourthly:#F5EDFF; // bouton
-$color-bg-fifthly:#ffffff; //blanc
-$color-tx-primary : #7E7E7E;
-$color-tx-secondary : #008766;
-$color-tx-tertiary :#ffffff;
-$color-tx-fourthly :rgb(0, 0, 0); 
-$color-sh-primary :rgb(0, 0, 0);
-$color-sh-dark :rgb(0, 0, 0);
+$color-fourthly :#353535;//footer
+$color-fifthly :#EAEAEA;//header 
+$color-sixthly : #F6F6F6; // bouton et bg restaurant
+$color-seventhly:#ffffff; //blanc
+$color-eighthly : #7E7E7E;//bouton
+$color-ninthly : #008766; //text flag
+$color-tenthly :#000; //noir
+
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 992px;

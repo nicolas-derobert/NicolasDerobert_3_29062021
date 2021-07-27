@@ -1,16 +1,18 @@
 .button-explore {
   border-radius: 50px;
-  color: $color-tx-tertiary;
+  color: $color-seventhly;
   background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
   border-width: 0px;
   z-index: 1;
+  transition: all 0.05s ;
   @include tablet-and-more-generic {
     margin: 30px;
     padding: 0px 30px;
   }
-  @include button-shadow-light;
+  @include box-shadow-middle-bottom-small-none-verylight;
   &:hover {
-    @include button-shadow-enhanced;
+    @include box-shadow-middle-bottom-medium-none-mediumlight;
+    background: linear-gradient(0deg, lighten($color: $color-primary,$amount: 5%) 0%, lighten($color: $color-secondary,$amount: 5%) 100%);
   }
 }
 .home .button-explore{
@@ -29,21 +31,27 @@
   margin: 13px 0px 13px 10px;
   z-index: 1;
   font-size: 20px;
-  @include button-shadow-light($color: $color-sh-primary);
+  @include box-shadow-middle-bottom-small-none-verylight($color: $color-tenthly);
   position: relative;
-  background-color: $color-bg-tertiary;
+  background-color: $color-sixthly;
+  transition: all 0.05s ;
   @include tablet-and-more-generic {
     margin: 30px;
     padding: 0px 30px;
   }
   &--colored {
-    @include button-bg-light;
+    // @include background-small-light;
+    background-color: lighten($color: $color-primary, $amount: 22%);
     .button-filter-text-area__logo{
     color: $color-primary;
   }
   }
   &:hover {
-    @include button-shadow-enhanced;
+    background-color: lighten($color:$color-sixthly, $amount: 1%);
+    @include box-shadow-middle-bottom-medium-none-mediumlight;
+    &.button-filter--colored{
+      background-color: lighten($color: $color-primary, $amount: 30%);
+    }
   }
   &__number {
     border-radius: 100%;
@@ -53,7 +61,7 @@
     top: 25px;
     width: 30px;
     height: 30px;
-    color: $color-tx-tertiary;
+    color: $color-seventhly;
     z-index: 2;
     p {
       margin: 0%;
@@ -78,7 +86,7 @@
   height: inherit;
 
   &__logo {
-    color: $color-tx-primary;
+    color: $color-eighthly;
     font-size: 20px;
   }
   &__text {

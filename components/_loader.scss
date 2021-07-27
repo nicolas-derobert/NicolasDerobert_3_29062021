@@ -1,7 +1,7 @@
 .home header,
 .home main,
 .home footer {
-  animation: disappear 2s 1s 1 ease;
+  animation: disappear 3.1s 0s 1 ease;
 }
 
 .loader {
@@ -12,7 +12,7 @@
   left: 50%;
   width: 80px;
   height: 80px;
-  animation:  loader-anim 1s linear 2.99s infinite;
+  z-index: -1;
 }
 .loader:after {
   content: " ";
@@ -23,7 +23,9 @@
   border-radius: 50%;
   border: 6px solid $color-primary;
   border-color: $color-primary transparent $color-primary transparent;
-  animation: loader-before-anim 1s linear 1s 5, loader-anim 1s linear 3s infinite;
+  animation: loader-rotate 1s linear 1s 3, loader-anim 1s linear 3s ;
+  transform: translate(-9999px);
+  z-index: -1;
 }
 @keyframes disappear {
   0% {
@@ -36,26 +38,34 @@
     transform: translate(0);
   }
 }
-@keyframes loader-before-anim {
+@keyframes loader-rotate {
   0% {
     transform: rotate(0deg);
+    opacity: 1;
+    // transform: translate(0px);
   }
+  99% {
+    // transform: translate(0px);
+    opacity: 1;
 
+  }
   100% {
     transform: rotate(360deg);
+    opacity: 1;
+
+    // transform: translate(-9999px);
   }
 }
 @keyframes loader-anim {
   0% {
-    border-color: $color-secondary transparent $color-secondary transparent;
-    opacity: 0;
+    transform: translate(-0px);
+    // border-color: $color-secondary transparent $color-secondary transparent;
+    // opacity: 0;
 }
-  90% {
-    border-color: $color-secondary transparent $color-secondary transparent;
-    opacity: 0;
-}
+
   100% {
-    border-color: $color-secondary transparent $color-secondary transparent;
-    opacity: 0;
+    transform: translate(-0px);
+    // border-color: $color-secondary transparent $color-secondary transparent;
+    // opacity: 0;
   }
 }

@@ -1,24 +1,29 @@
-@mixin button-shadow-very-light($color: $color-sh-primary) {
+
+@mixin box-shadow-middle-center-high-medium-veryverylight($color: $color-tenthly) {
   box-shadow: 0px 0px 6px 4px lighten($color: $color, $amount: 90%);
 }
-@mixin button-shadow-light($color: $color-sh-primary) {
+
+@mixin box-shadow-middle-bottom-small-none-verylight($color: $color-tenthly) {
   box-shadow: 0px 4px 3px 0px lighten($color: $color, $amount: 70%);
 }
-@mixin button-shadow-enhanced($color: $color-sh-primary) {
+
+@mixin box-shadow-middle-bottom-medium-none-mediumlight($color: $color-tenthly) {
   box-shadow: 0px 5px 4px 0px lighten($color: $color, $amount: 60%);
 }
-@mixin button-bg-light($color: $color-primary) {
-  background-color: lighten($color: $color, $amount: 22%);
-}
-@mixin article-shadow($color: $color-sh-primary) {
+
+@mixin box-shadow-middle-bottom-medium-medium-mediumlight($color: $color-tenthly) {
   box-shadow: 0px 2px 4px 4px lighten($color: $color, $amount: 70%);
 }
-@mixin article-shadow-darken($color: $color-sh-primary) {
-  box-shadow: 0px 2px 1px darken($color, 30%);
+
+@mixin box-shadow-middle-bottom-small-small-light($color: $color-tenthly) {
+  box-shadow: 0px 5px 5px 0px lighten($color: $color, $amount: 80%);
 }
-@mixin header-shadow($color: $color-sh-primary) {
-  box-shadow: 0px 1px 2px 1px lighten($color: $color, $amount: 50%);
-}
+
+// @mixin background-small-light($color: $color-primary) {
+//   background-color: lighten($color: $color, $amount: 22%);
+// }
+
+// typography
 @mixin highlight-typography {
   font-size: 17px;
 }

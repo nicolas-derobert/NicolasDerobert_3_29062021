@@ -20,7 +20,7 @@
   justify-content: space-between;
   font-size: 1.5em;
   img {
-    color: $color-tx-tertiary;
+    color: $color-seventhly;
   }
 }
 .allpages .website-logo-area {
@@ -32,7 +32,7 @@
   }
   div {
     i {
-      color: $color-tx-fourthly;
+      color: $color-tenthly;
     }
     flex: 1 20%;
     text-align: center;
@@ -44,7 +44,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  @include header-shadow;
+  @include box-shadow-middle-bottom-small-small-light;
 }
 
 .location-area {
@@ -54,7 +54,7 @@
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
-  background-color: $color-bg-secondary;
+  background-color: $color-fifthly;
   p {
     padding-left: 1%;
     font-size: 1.1rem;

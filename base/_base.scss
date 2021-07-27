@@ -19,13 +19,13 @@ main {
 .explore {
   display: flex;
   flex-flow: column wrap;
-  background-color: $color-bg-tertiary;
+  background-color: $color-sixthly;
   padding: 30px;
   text-align: center;
   @include tablet-and-more-row-positionning ;
   p {
     @include highlight-typography;
-    color: $color-sh-primary;
+    color: $color-tenthly;
   }
 }
 .order{
@@ -37,7 +37,7 @@ main {
 .menu {
   padding: 10px 5%;
   transform: translate(0, -30px);
-  background-color: $color-bg-tertiary;
+  background-color: $color-sixthly;
   border-radius: 30px 30px 0px 0px;
 }
 
@@ -45,9 +45,10 @@ main {
   display: flex;
   flex-flow: column wrap;
   padding: 10px 5%;
+  background-color:$color-seventhly ;
 }
 .results-area {
-  background-color: $color-bg-tertiary;
+  background-color: $color-sixthly;
   padding: 10px 5%;
 }
 .restaurants-list{

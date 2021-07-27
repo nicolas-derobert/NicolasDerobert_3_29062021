@@ -199,7 +199,7 @@ footer {
 }
 
 .allpages .website-logo-area div i {
-  color: black;
+  color: #000;
 }
 
 .home .website-logo-area {
@@ -213,8 +213,8 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  -webkit-box-shadow: 0px 1px 2px 1px gray;
-          box-shadow: 0px 1px 2px 1px gray;
+  -webkit-box-shadow: 0px 5px 5px 0px #cccccc;
+          box-shadow: 0px 5px 5px 0px #cccccc;
 }
 
 .location-area {
@@ -248,6 +248,8 @@ footer {
   background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
   border-width: 0px;
   z-index: 1;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
   -webkit-box-shadow: 0px 4px 3px 0px #b3b3b3;
           box-shadow: 0px 4px 3px 0px #b3b3b3;
 }
@@ -262,6 +264,8 @@ footer {
 .button-explore:hover {
   -webkit-box-shadow: 0px 5px 4px 0px #999999;
           box-shadow: 0px 5px 4px 0px #999999;
+  background: -webkit-gradient(linear, left bottom, left top, from(#a16be0), to(#ff93e1));
+  background: linear-gradient(0deg, #a16be0 0%, #ff93e1 100%);
 }
 
 .home .button-explore {
@@ -283,6 +287,8 @@ footer {
           box-shadow: 0px 4px 3px 0px #b3b3b3;
   position: relative;
   background-color: #F6F6F6;
+  -webkit-transition: all 0.05s;
+  transition: all 0.05s;
 }
 
 @media screen and (min-width: 768px) {
@@ -301,8 +307,13 @@ footer {
 }
 
 .button-filter:hover {
+  background-color: #f9f9f9;
   -webkit-box-shadow: 0px 5px 4px 0px #999999;
           box-shadow: 0px 5px 4px 0px #999999;
+}
+
+.button-filter:hover.button-filter--colored {
+  background-color: #e4d5f6;
 }
 
 .button-filter__number {
@@ -396,7 +407,7 @@ footer {
 
 .restaurant-card a {
   text-decoration: none;
-  color: black;
+  color: #000;
 }
 
 @media screen and (min-width: 768px) {
@@ -478,12 +489,12 @@ footer {
 
 .text-area__text h3 {
   margin: 0px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .text-area__text p {
   margin: 0px;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .text-area__logo {
@@ -735,8 +746,8 @@ footer {
 .home header,
 .home main,
 .home footer {
-  -webkit-animation: disappear 2s 1s 1 ease;
-          animation: disappear 2s 1s 1 ease;
+  -webkit-animation: disappear 3.1s 0s 1 ease;
+          animation: disappear 3.1s 0s 1 ease;
 }
 
 .loader {
@@ -748,8 +759,7 @@ footer {
   left: 50%;
   width: 80px;
   height: 80px;
-  -webkit-animation: loader-anim 1s linear 2.99s infinite;
-          animation: loader-anim 1s linear 2.99s infinite;
+  z-index: -1;
 }
 
 .loader:after {
@@ -761,8 +771,11 @@ footer {
   border-radius: 50%;
   border: 6px solid #9356DC;
   border-color: #9356DC transparent #9356DC transparent;
-  -webkit-animation: loader-before-anim 1s linear 1s 5, loader-anim 1s linear 3s infinite;
-          animation: loader-before-anim 1s linear 1s 5, loader-anim 1s linear 3s infinite;
+  -webkit-animation: loader-rotate 1s linear 1s 3, loader-anim 1s linear 3s;
+          animation: loader-rotate 1s linear 1s 3, loader-anim 1s linear 3s;
+  -webkit-transform: translate(-9999px);
+          transform: translate(-9999px);
+  z-index: -1;
 }
 
 @-webkit-keyframes disappear {
@@ -795,55 +808,57 @@ footer {
   }
 }
 
-@-webkit-keyframes loader-before-anim {
+@-webkit-keyframes loader-rotate {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    opacity: 1;
   }
 }
 
-@keyframes loader-before-anim {
+@keyframes loader-rotate {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
+    opacity: 1;
+  }
+  99% {
+    opacity: 1;
   }
   100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
+    opacity: 1;
   }
 }
 
 @-webkit-keyframes loader-anim {
   0% {
-    border-color: #FF79DA transparent #FF79DA transparent;
-    opacity: 0;
-  }
-  90% {
-    border-color: #FF79DA transparent #FF79DA transparent;
-    opacity: 0;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   100% {
-    border-color: #FF79DA transparent #FF79DA transparent;
-    opacity: 0;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
 }
 
 @keyframes loader-anim {
   0% {
-    border-color: #FF79DA transparent #FF79DA transparent;
-    opacity: 0;
-  }
-  90% {
-    border-color: #FF79DA transparent #FF79DA transparent;
-    opacity: 0;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
   100% {
-    border-color: #FF79DA transparent #FF79DA transparent;
-    opacity: 0;
+    -webkit-transform: translate(0px);
+            transform: translate(0px);
   }
 }
 
@@ -908,7 +923,7 @@ main {
 
 .explore p {
   font-size: 17px;
-  color: black;
+  color: #000;
 }
 
 .order {
@@ -944,6 +959,7 @@ main {
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
   padding: 10px 5%;
+  background-color: #ffffff;
 }
 
 .results-area {
