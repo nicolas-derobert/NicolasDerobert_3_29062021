@@ -892,6 +892,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
+  background-color: #F6F6F6;
 }
 
 .explore {
