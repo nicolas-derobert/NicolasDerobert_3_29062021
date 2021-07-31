@@ -1,6 +1,3 @@
-// header {
-
-// }
 .main-picture {
   img {
     object-fit: cover;
@@ -14,13 +11,20 @@
 .website-logo-area {
   height: 100%;
   z-index: 1;
-  padding: 20px 0%;
+  padding: 10px 0%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+  align-items: center;
   font-size: 1.5em;
-  img {
-    color: $color-seventhly;
+  h1{
+  margin: 0;
+}
+  div{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 .allpages .website-logo-area {

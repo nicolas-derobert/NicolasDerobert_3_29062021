@@ -154,7 +154,7 @@ footer {
 .website-logo-area {
   height: 100%;
   z-index: 1;
-  padding: 20px 0%;
+  padding: 10px 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,11 +165,30 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.5em;
 }
 
-.website-logo-area img {
-  color: #ffffff;
+.website-logo-area h1 {
+  margin: 0;
+}
+
+.website-logo-area div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .allpages .website-logo-area {
