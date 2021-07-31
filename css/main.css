@@ -20,10 +20,6 @@ h1 {
   font-size: 2em;
 }
 
-.home h1 {
-  display: none;
-}
-
 .home h2, .home h3 {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
@@ -154,7 +150,7 @@ footer {
 .website-logo-area {
   height: 100%;
   z-index: 1;
-  padding: 20px 0%;
+  padding: 10px 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,14 +161,33 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.5em;
 }
 
-.website-logo-area img {
-  color: #ffffff;
+.website-logo-area h1 {
+  margin: 0;
 }
 
-.allpages .website-logo-area {
+.website-logo-area div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.website-logo-area {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,12 +200,12 @@ footer {
           justify-content: space-between;
 }
 
-.allpages .website-logo-area img {
+.website-logo-area img {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
 }
 
-.allpages .website-logo-area div {
+.website-logo-area div {
   -webkit-box-flex: 1;
       -ms-flex: 1 20%;
           flex: 1 20%;
@@ -198,21 +213,11 @@ footer {
   width: 100%;
 }
 
-.allpages .website-logo-area div i {
+.website-logo-area div i {
   color: #000;
 }
 
 .home .website-logo-area {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
   -webkit-box-shadow: 0px 5px 5px 0px #cccccc;
           box-shadow: 0px 5px 5px 0px #cccccc;
 }
