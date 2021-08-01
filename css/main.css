@@ -113,8 +113,12 @@ footer {
       grid-template-columns: 1fr 12fr;
   -ms-grid-rows: (1fr)[4];
       grid-template-rows: repeat(4, 1fr);
-      grid-template-areas: "proposer-logo proposer-text" "partenaire-logo partenaire-text " "mention mention"  "contact contact";
+      grid-template-areas: "proposer-logo proposer-text" "partenaire-logo partenaire-text " "mention mention" "contact contact";
   margin-bottom: 20px;
+}
+
+.footer-links h2 {
+  display: none;
 }
 
 .footer-links p {
@@ -956,6 +960,12 @@ main {
   border-radius: 30px 30px 0px 0px;
 }
 
+.title-area h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2em;
+  text-transform: none;
+}
+
 .filter-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1029,6 +1039,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+}
+
+.all-dishes > :nth-child(1) {
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

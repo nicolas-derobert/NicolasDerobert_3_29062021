@@ -4,7 +4,7 @@ body {
   @include large-devices-and-more-generic {
     width: 75%;
     margin: auto;
-    }
+  }
 }
 header {
   display: flex;
@@ -23,13 +23,13 @@ main {
   background-color: $color-sixthly;
   padding: 30px;
   text-align: center;
-  @include tablet-and-more-row-positionning ;
+  @include tablet-and-more-row-positionning;
   p {
     @include highlight-typography;
     color: $color-tenthly;
   }
 }
-.order{
+.order {
   display: flex;
   flex-flow: row;
   justify-content: center;
@@ -41,21 +41,27 @@ main {
   background-color: $color-sixthly;
   border-radius: 30px 30px 0px 0px;
 }
-
+.title-area {
+  h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 2em;
+    text-transform: none;
+  }
+}
 .filter-area {
   display: flex;
   flex-flow: column wrap;
   padding: 10px 5%;
-  background-color:$color-seventhly ;
+  background-color: $color-seventhly;
 }
 .results-area {
   background-color: $color-sixthly;
   padding: 10px 5%;
 }
-.restaurants-list{
+.restaurants-list {
   display: flex;
   flex-flow: column nowrap;
-  @include tablet-and-more-row-positionning ;
+  @include tablet-and-more-row-positionning;
 }
 .division-bloc {
   display: flex;
@@ -72,14 +78,17 @@ main {
   }
 }
 
-.all-dishes{
+.all-dishes {
   display: flex;
   flex-flow: column nowrap;
+  > :nth-child(1) {
+    display: none;
+  }
   @include tablet-and-more-generic {
     flex-flow: row nowrap;
     justify-content: space-around;
-    section{
+    section {
       flex-basis: 30%;
     }
-    }
+  }
 }

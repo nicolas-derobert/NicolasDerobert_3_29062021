@@ -1,71 +1,69 @@
-footer{
-    background-color: $color-fourthly;
-    color:$color-seventhly;
-    padding: 4px 20px 12px;
-    @include tablet-and-more-generic {
-display: flex;
-flex-direction: column;
-align-items: center;
-      }
+footer {
+  background-color: $color-fourthly;
+  color: $color-seventhly;
+  padding: 4px 20px 12px;
+  @include tablet-and-more-generic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .website-logo-area-bottom {
-    border-style: none;
-    i{
-      width: 100px;
-      display: block;
-    }
-    h3 {
-       font-size: 20px;
-       font-weight: 200;
-      font-family: "Shrikhand", cursive;
-    }
+  border-style: none;
+  i {
+    width: 100px;
+    display: block;
   }
-  
-.proposer-logo{
+  h3 {
+    font-size: 20px;
+    font-weight: 200;
+    font-family: "Shrikhand", cursive;
+  }
+}
 
-    grid-area: proposer-logo;
+.proposer-logo {
+  grid-area: proposer-logo;
 }
-.proposer-text{
-    grid-area: proposer-text;
+.proposer-text {
+  grid-area: proposer-text;
 }
-.partenaire-logo{
-    grid-area: partenaire-logo;
+.partenaire-logo {
+  grid-area: partenaire-logo;
 }
-.partenaire-text{
-    grid-area: partenaire-text;
+.partenaire-text {
+  grid-area: partenaire-text;
 }
-.mention{
-    grid-area: mention;
+.mention {
+  grid-area: mention;
 }
-.contact{
-    grid-area: contact;
+.contact {
+  grid-area: contact;
 }
-.footer-links{
-    @include tablet-and-more-generic {
-        // flex-basis: 100%;
-      }
-    display: grid;
-    grid-template-columns:1fr 12fr;
-    grid-template-rows: repeat(4, 1fr); 
-    grid-template-areas: 
+.footer-links {
+  h2 {
+    display: none;
+  }
+  display: grid;
+  grid-template-columns: 1fr 12fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
     "proposer-logo proposer-text"
     "partenaire-logo partenaire-text "
-    "mention mention" 
+    "mention mention"
     "contact contact";
-    margin-bottom: 20px;
-    p{
-        margin: 4px 2px;
-        a{
-            color: $color-seventhly ;
-            text-decoration: none;
-        }
+  margin-bottom: 20px;
+  p {
+    margin: 4px 2px;
+    a {
+      color: $color-seventhly;
+      text-decoration: none;
     }
-    i{
-        padding-left: 5px;
-        padding-right: 5px;
-        line-height: 20px;
-        font-size: 100%;
-        text-align: center;
-    }
+  }
+  i {
+    padding-left: 5px;
+    padding-right: 5px;
+    line-height: 20px;
+    font-size: 100%;
+    text-align: center;
+  }
 }
-
