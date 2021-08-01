@@ -993,6 +993,10 @@ main {
           flex-flow: column nowrap;
 }
 
+.restaurants-list > :nth-child(1) {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   .restaurants-list {
     display: -webkit-box;
