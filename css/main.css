@@ -936,6 +936,10 @@ main {
   color: #000;
 }
 
+.explore h2 {
+  text-transform: none;
+}
+
 .order {
   display: -webkit-box;
   display: -ms-flexbox;

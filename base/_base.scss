@@ -28,6 +28,9 @@ main {
     @include highlight-typography;
     color: $color-tenthly;
   }
+  h2{
+    text-transform: none;
+  }
 }
 .order {
   display: flex;
